@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MotionMonitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waN-KB-JEL">
+                                <rect key="frame" x="20" y="28" width="560" height="185"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipi-Pf-sfG">
+                                <rect key="frame" x="20" y="213" width="560" height="184"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPm-Mg-m5S">
+                                <rect key="frame" x="20" y="395" width="560" height="185"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ipi-Pf-sfG" firstAttribute="top" secondItem="waN-KB-JEL" secondAttribute="bottom" id="2Pc-uV-p3b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ipi-Pf-sfG" secondAttribute="trailing" id="31L-I5-g1g"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mPm-Mg-m5S" secondAttribute="leading" id="FMr-4D-QAf"/>
+                            <constraint firstItem="waN-KB-JEL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OeK-mL-qaJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ipi-Pf-sfG" secondAttribute="leading" id="T6R-qF-LhI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mPm-Mg-m5S" secondAttribute="trailing" id="WLn-pQ-xYe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="waN-KB-JEL" secondAttribute="leading" id="bL5-gQ-hJj"/>
+                            <constraint firstItem="mPm-Mg-m5S" firstAttribute="top" secondItem="Ipi-Pf-sfG" secondAttribute="bottom" constant="-2" id="cO5-89-RmW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mPm-Mg-m5S" secondAttribute="bottom" constant="20" id="eXc-NS-C2k"/>
+                            <constraint firstItem="mPm-Mg-m5S" firstAttribute="height" secondItem="waN-KB-JEL" secondAttribute="height" id="g5d-Kt-qL2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="waN-KB-JEL" secondAttribute="trailing" id="hoW-GK-FNI"/>
+                            <constraint firstItem="Ipi-Pf-sfG" firstAttribute="height" secondItem="waN-KB-JEL" secondAttribute="height" id="zcD-pZ-4Jb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accelerometerLabel" destination="Ipi-Pf-sfG" id="Ulz-sK-yei"/>
+                        <outlet property="attitudeLabel" destination="mPm-Mg-m5S" id="exo-vI-7dB"/>
+                        <outlet property="gyroscopeLabel" destination="waN-KB-JEL" id="bv5-Er-0Gl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>
